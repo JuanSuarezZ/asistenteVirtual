@@ -4,6 +4,9 @@ import speech_recognition as sr
 r = sr.Recognizer()
 
 
+
+
+
 while True:
 
     with sr.Microphone() as source:
