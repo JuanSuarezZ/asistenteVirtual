@@ -6,7 +6,7 @@ r = sr.Recognizer()
 while True:
 
     with sr.Microphone() as source:
-        print('Bienvenido, sere tu asistente por voz: ')
+        print('Bienvenido, sere tu asistente por voz :) ')
         audio = r.listen(source)
 
         try:
