@@ -1,6 +1,7 @@
 import webbrowser
 import threading
 import time
+import os
 import speech_recognition as sr
 
 r = sr.Recognizer()
@@ -51,6 +52,12 @@ def escuchar():
 
                 print("va a guardar: ",opciones3[1])
                 thread._stop
+
+            if opciones[0] == 'jugar' and opciones[1] == 'culebrita': 
+                os.system('python culebrita.py')
+                thread._stop 
+
+            
 
         except:
             print("No he podido entenderte")
