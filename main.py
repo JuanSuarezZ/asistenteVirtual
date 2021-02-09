@@ -6,6 +6,7 @@ import speech_recognition as sr
 
 r = sr.Recognizer()
 x = True
+
 rutas = {'google' : 'https://google.com', 
          'facebook' : 'https://www.facebook.com',
         }
@@ -47,7 +48,8 @@ def escuchar():
             if opciones[0] == 'guarda' and opciones[1] == 'esto':
                 
                 file = open("C:\holamundo.txt","w")
-                file.write("hola mundo\n")
+                file.write(opciones3[1])
+                file.write(opciones3[1],"\n")
                 file.close()
 
                 print("va a guardar: ",opciones3[1])
@@ -58,7 +60,6 @@ def escuchar():
                 thread._stop 
 
             
-
         except:
             print("No he podido entenderte")
          
@@ -85,7 +86,6 @@ while x == True:
                 x = False
          
                 
-       
         except:
             print("intenta de nuevo")
 
